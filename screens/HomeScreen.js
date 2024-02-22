@@ -62,6 +62,9 @@ const HomeScreen = () => {
         <Pressable onPress={handleAddCatalogue} style={styles.button}>
           <Text style={styles.buttonText}>Add a new catalogue</Text>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate('ChatRooms')} style={styles.button}>
+          <Text style={styles.buttonText}>Go to Chat Rooms</Text>
+        </Pressable>
       </View>
     </SafeAreaView>
   );
